@@ -1,0 +1,25 @@
+{
+    "id": "com.cpanato.rent-a-carlos",
+    "name": "Rent a Carlos",
+    "description": "This plugin help you to ask for help.",
+    "version": "0.1.0",
+    "server": {
+        "executables": {
+            "linux-amd64": "server/dist/plugin-linux-amd64",
+            "darwin-amd64": "server/dist/plugin-darwin-amd64",
+            "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+        }
+    },
+    "settings_schema": {
+        "header": "",
+        "footer": "",
+        "settings": [
+            {
+                "key": "Token",
+                "display_name": "Token:",
+                "type": "generated",
+                "help_text": "The token used validate the requests."
+            }
+        ]
+    }
+}

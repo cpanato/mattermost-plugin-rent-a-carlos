@@ -1,0 +1,10 @@
+[prune]
+  non-go = true
+  go-tests = true
+  unused-packages = true
+
+[[constraint]]
+  name = "github.com/mattermost/mattermost-server"
+  # version = "~5.10.0"
+  branch = "master"
+

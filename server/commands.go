@@ -109,7 +109,7 @@ func (p *Plugin) handleRequestHelp(args *model.CommandArgs) (*model.CommandRespo
 	userNameRequested := strings.TrimPrefix(parameters[0], "@")
 	userRequested, err := p.API.GetUserByUsername(userNameRequested)
 	if err != nil {
-		return getCommandResponse(model.COMMAND_RESPONSE_TYPE_EPHEMERAL, "Did not found the requested user"), nil
+		return getCommandResponse(model.COMMAND_RESPONSE_TYPE_EPHEMERAL, "Did not find the requested user"), nil
 	}
 
 	var fields []*model.SlackAttachmentField
